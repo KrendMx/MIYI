@@ -6,3 +6,7 @@ yarn.lock
 package-lock.json
 src
 tests
+package.json
+README.md
+preact.config.js
+tsconfig.json
