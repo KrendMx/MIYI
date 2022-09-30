@@ -2,11 +2,6 @@ node_modules
 /*.log
 .history
 .env
+build
 yarn.lock
 package-lock.json
-src
-tests
-package.json
-README.md
-preact.config.js
-tsconfig.json
