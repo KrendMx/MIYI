@@ -10,7 +10,8 @@ type LinkProps = {
 
 const Link: React.FC<LinkProps> = ({link, title}) => {
 
-    console.log();
+  console.log();
+
 
   return (
     <Container onClick={() => {
