@@ -1,7 +1,10 @@
 import React from "react";
 import { h } from "preact";
+import { ButtonTypes } from "../../../components/ui-kit/Button/Button.interfaces";
 import { Ball, Container, MainText } from "./styles";
 import Typography from "../../../components/ui-kit/Typography";
+import Button from "../../../components/ui-kit/Button";
+import styles from './style.module.css'
 
 const Heroes: React.FC = () => {
   return (
@@ -10,7 +13,23 @@ const Heroes: React.FC = () => {
       <MainText color="gradient" margin="0">
         So you don't lose them.
       </MainText>
-      <Typography value={"Turn your audience into email and text message subscribers."} />
+      <Typography
+        width={"50%"}
+        size={"40px"}
+        margin={"50px auto 0"}
+        weight={"500"}
+      >
+        Turn your audience into email and text message subscribers.
+      </Typography>
+      <div style={{display: "flex", justifyContent:"center", margin: "20px auto 0", gap:"10px"}}>
+        <Button padding="14px 20px" buttonType={ButtonTypes.Fill}>Get Started Now</Button>
+        <Button padding="14px 20px" buttonType={ButtonTypes.Disabled}>Know more about</Button>
+      </div>
+      <div className={styles.investorsBlock}>
+        <div className={styles.greenStatus} />
+        <p className={styles.value}>1000+</p>
+        <p className={styles.subValue}>investors have already started</p>
+      </div>
       <div>
         <Ball
           size="270px"

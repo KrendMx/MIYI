@@ -14,5 +14,9 @@ export const Container = styled.div`
 
 export const Nav = styled.div`
     display: flex;
-    gap: ${(props) => props.gap || '50px'}
+    gap: ${(props) => props.gap || '50px'};
+
+    @media (max-width: 1000px) {
+        display: none;
+    }
 `

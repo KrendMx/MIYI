@@ -3,9 +3,9 @@ import { h } from 'preact';
 import { ButtonProps } from './Button.interfaces';
 import { Container } from './style';
 
-const Button: React.FC<ButtonProps> = ({title, onClick, buttonType}) => {
+const Button: React.FC<ButtonProps> = ({children, onClick, buttonType, ...props}) => {
   return (
-    <Container onClick={onClick} style={buttonType}>{title}</Container>
+    <Container {...props} onClick={onClick} style={buttonType}>{children}</Container>
   )
 }
 

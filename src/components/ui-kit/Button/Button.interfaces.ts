@@ -1,12 +1,14 @@
 type ButtonProps = {
-    title: string;
+    children: string;
     buttonType: ButtonTypes;
     onClick?: () => void;
+    padding?: string;
 }
 
 enum ButtonTypes {
     Outline,
     Fill,
+    Disabled
 }
 
 export {ButtonTypes};
