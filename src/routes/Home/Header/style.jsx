@@ -10,9 +10,9 @@ export const Container = styled.div`
     & img {
         width: 180px;
     }
+`
 
-    & nav {
-        display: flex;
-        gap: 50px;
-    }
+export const Nav = styled.div`
+    display: flex;
+    gap: ${(props) => props.gap || '50px'}
 `
