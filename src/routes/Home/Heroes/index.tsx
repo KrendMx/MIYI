@@ -1,7 +1,7 @@
 import React from "react";
 import { h } from "preact";
-import { Ball, Container, MainText } from "./styles";
 import Typography from "../../../components/ui-kit/Typography";
+import { Ball, Container, MainText } from "./styles";
 
 const Heroes: React.FC = () => {
   return (
